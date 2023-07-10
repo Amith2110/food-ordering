@@ -10,6 +10,17 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+    },
+    colors: {
+      grey: "#f2f3f5",
+      orange: "#ffca51",
+      "dark-grey": "#9e9e9e",
+      green: "#019c00",
+      red: "#ff0626",
+      black: "#181818",
+    },
   },
   plugins: [],
 }
