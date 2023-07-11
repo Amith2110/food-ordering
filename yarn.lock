@@ -792,7 +792,7 @@
     which "^3.0.1"
     ws "^8.13.0"
 
-"@nuxt/kit@3.6.2", "@nuxt/kit@^3.6.1":
+"@nuxt/kit@3.6.2", "@nuxt/kit@^3.0.0", "@nuxt/kit@^3.6.1":
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.6.2.tgz#7201b64799a53f26a8d7ae7878b0138cb2a2e185"
   integrity sha512-X1WN76izsILva6TvQVTfJCHG7TXCwsB6jsxZKcU3qSog26jer5dildDb5ZmKL3e+IFD6BwK4ShO/py8VZcT6OA==
@@ -4166,6 +4166,13 @@ nuxi@3.6.2:
   integrity sha512-1aRoq8QPXP+VIZZy4S/ZpJ0xx9j1DmOM3hWDfX40clAQCY4YX+NNAOKY4WzXFwU4t38xl+9wY5PE124VHWli2w==
   optionalDependencies:
     fsevents "~2.3.2"
+
+nuxt-icons@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/nuxt-icons/-/nuxt-icons-3.2.1.tgz#a70456e8a310c4a46f43dcb9b113085158205d77"
+  integrity sha512-trvAFq9oWYwWEQ0qZDHVxvLK+TwOdFnoXYOXQvN1CRUlp1DBJdxC8vXO3mED2Kb+Suag+bpWLC6eXGrRwhfffQ==
+  dependencies:
+    "@nuxt/kit" "^3.0.0"
 
 nuxt@^3.6.2:
   version "3.6.2"

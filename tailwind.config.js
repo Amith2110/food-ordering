@@ -9,17 +9,23 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        grey: "#f2f3f5",
+        orange: "#ffca51",
+        "dark-grey": "#9e9e9e",
+        green: "#019c00",
+        red: "#ff0626",
+        black: "#181818",
+        background: "#FAFAFA",
+        white: "#FFFFFF",
+      },
+      fontSize: {
+        xxs: "0.5rem",
+      },
+    },
     fontFamily: {
       sans: ["Inter", "sans-serif"],
-    },
-    colors: {
-      grey: "#f2f3f5",
-      orange: "#ffca51",
-      "dark-grey": "#9e9e9e",
-      green: "#019c00",
-      red: "#ff0626",
-      black: "#181818",
     },
   },
   plugins: [],
