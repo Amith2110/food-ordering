@@ -5,6 +5,12 @@
             </div>
             <p class="self-center">Delivery</p>
         </div>
-        <p class="self-center">$10.95</p>
+        <p class="self-center">${{ props.deliveryPrice }}</p>
     </div>
 </template>
+
+<script lang="ts" setup>
+const props = defineProps<{
+    deliveryPrice: number
+}>()
+</script>

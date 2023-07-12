@@ -8,5 +8,16 @@ export default defineNuxtConfig({
   },
   css: ["~/assets/css/main.css"],
   pages: true,
-  modules: ["nuxt-icons"],
+  modules: [
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore"],
+      },
+    ],
+    "nuxt-icons",
+  ],
+  imports: {
+    dirs: ["stores"],
+  },
 })

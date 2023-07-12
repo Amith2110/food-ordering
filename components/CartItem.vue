@@ -1,25 +1,25 @@
 <template>
     <div class="flex border-2 border-background py-8 px-2">
         <div class="flex flex-col w-2/3 gap-y-4">
-            <p class="text-xl font-bold">Broiled Salmon Steak</p>
+            <p class="text-xl font-bold">{{ name }}</p>
             <div class="flex gap-x-2">
                 <div class="flex flex-col">
                     <p class="text-xs font-semibold">Protein</p>
-                    <p class="text-xs">30g</p>
+                    <p class="text-xs">{{ protein }}g</p>
                 </div>
                 <div class="flex flex-col">
                     <p class="text-xs font-semibold">Carbohydrate</p>
-                    <p class="text-xs">30g</p>
+                    <p class="text-xs">{{ carbs }}g</p>
                 </div>
                 <div class="flex flex-col">
                     <p class="text-xs font-semibold">Fat</p>
-                    <p class="text-xs">30g</p>
+                    <p class="text-xs">{{ fat }}g</p>
                 </div>
-                <circle-progress :percent="10" :size="36" :viewport="true" :border-width="2" :border-bg-width="2"
-                    fill-color="#019c00" class="align-baseline">
+                <circle-progress :percent="percentage" :size="36" :viewport="true" :border-width="2" :border-bg-width="2"
+                    :fill-color="fillColor" class="align-baseline">
                     <slot>
                         <div class="flex flex-col text-center">
-                            <p class="text-xxs font-bold">530</p>
+                            <p class="text-xxs font-bold">{{ calories }}</p>
                             <p class="text-xxs">Cals</p>
                         </div>
                     </slot>
@@ -27,16 +27,16 @@
             </div>
             <div class="flex gap-x-2 items-baseline">
                 <div class="flex justify-between px-4 py-2 w-[60%] border rounded-3xl bg-background">
-                    <button>
+                    <button @click="cartStore.removeFromCart(id)">
                         <nuxt-icon name="minus" class="text-lg font-bold" />
                     </button>
-                    <p class="text-lg font-bold">1</p>
-                    <button>
+                    <p class="text-lg font-bold">{{ cartStore.getQuantityOfProduct(id) }}</p>
+                    <button @click="cartStore.addToCart(id)">
                         <nuxt-icon name="plus" class="text-lg font-bold" />
                     </button>
                 </div>
                 <div>
-                    <p class="text-xl">$1.99</p>
+                    <p class="text-xl">${{ price }}</p>
                 </div>
             </div>
         </div>
@@ -45,3 +45,44 @@
         </div>
     </div>
 </template>
+
+<script lang="ts" setup>
+type ProductProps = {
+    name: string
+    calories: number
+    carbs: number
+    protein: number
+    fat: number
+    price: number
+    url: string
+    id: number
+}
+
+const cartStore = useCartStore()
+
+const {
+    name,
+    calories,
+    carbs,
+    protein,
+    fat,
+    price,
+    url,
+    id
+} = defineProps<ProductProps>()
+
+
+const percentage = computed(() => {
+    return (calories / 1000) * 100
+})
+
+const fillColor = computed(() => {
+    if (calories <= 500) {
+        return '#019c00'
+    } else if (calories <= 800) {
+        return '#ffca51'
+    } else {
+        return '#ff0626'
+    }
+})
+</script>
