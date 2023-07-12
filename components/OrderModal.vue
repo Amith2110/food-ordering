@@ -12,7 +12,7 @@
                 class="absolute top-1/4 left-1/4">
                 <slot>
                     <div class="flex flex-col text-center">
-                        <p class="text-xxs">Processing...</p>
+                        <p class="text-lg">Processing...</p>
                     </div>
                 </slot>
             </circle-progress>
@@ -27,6 +27,7 @@
 <script setup lang="ts">
 
 const props = defineProps<{ onCloseRequest: () => void }>()
+const router = useRouter()
 
 const percent = ref(20)
 let interval: number | null = null
@@ -37,6 +38,7 @@ onMounted(() => {
             if (interval)
                 window.clearInterval(interval)
             props.onCloseRequest()
+            router.push('/')
             return
         }
         percent.value += 20
