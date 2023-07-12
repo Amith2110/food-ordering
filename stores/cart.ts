@@ -65,5 +65,8 @@ export const useCartStore = defineStore("cart", {
         }
       }
     },
+    emptyCart() {
+      this.cartItems = []
+    },
   },
 })
