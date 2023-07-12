@@ -1,7 +1,7 @@
 <template>
     <div class="flex px-2 py-8 border-2 border-background justify-between items-center gap-x-2">
         <div class="flex gap-2">
-            <img src="/images/pizza.png" alt="pizza" class="w-16" />
+            <img :src="url" alt="pizza" class="w-20 h-20 object-cover" />
             <p class="font-medium text-lg self-center">{{ props.quantity }}</p>
             <p class="font-medium text-lg self-center">x</p>
             <p class="font-medium text-lg wrap self-center whitespace-normal">{{ props.name }}</p>
@@ -20,6 +20,7 @@ type Props = {
     price: number
     name: string
     productId: number
+    url: string
 }
 const props = defineProps<Props>()
 </script>

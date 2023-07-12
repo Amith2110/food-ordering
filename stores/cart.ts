@@ -1,5 +1,3 @@
-import { Product } from "~/types"
-
 type CartItem = {
   name: string
   quantity: number
@@ -14,10 +12,10 @@ export const useCartStore = defineStore("cart", {
     cartItems: [] as CartItem[],
   }),
   getters: {
-    getTotalQuantity() {
+    getTotalQuantity(): number {
       return this.cartItems.reduce((total, item) => total + item.quantity, 0)
     },
-    getTotalPrice() {
+    getTotalPrice(): number {
       return parseFloat(
         this.cartItems
           .reduce((total, item) => total + item.quantity * item.price, 0)
@@ -42,6 +40,7 @@ export const useCartStore = defineStore("cart", {
         cartItem.quantity++
       } else {
         const product = useProductsStore().getProduct(productId)
+        if (!product) return
         this.cartItems.push({
           name: product.name,
           quantity: 1,

@@ -11,7 +11,7 @@ export const useProductsStore = defineStore("products", {
         protein: 15,
         fat: 5,
         price: 8.99,
-        url: "https://example.com/sushi-roll",
+        url: "https://images.pexels.com/photos/5900883/pexels-photo-5900883.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 0,
       },
       {
@@ -22,7 +22,7 @@ export const useProductsStore = defineStore("products", {
         protein: 10,
         fat: 15,
         price: 9.99,
-        url: "https://example.com/pad-thai",
+        url: "/images/asian.png",
         id: 1,
       },
       {
@@ -33,7 +33,7 @@ export const useProductsStore = defineStore("products", {
         protein: 5,
         fat: 2,
         price: 3.99,
-        url: "https://example.com/miso-soup",
+        url: "/images/asian.png",
         id: 2,
       },
       {
@@ -44,7 +44,7 @@ export const useProductsStore = defineStore("products", {
         protein: 20,
         fat: 12,
         price: 11.99,
-        url: "https://example.com/bibimbap",
+        url: "https://images.pexels.com/photos/12973148/pexels-photo-12973148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         id: 3,
       },
       {
@@ -55,7 +55,7 @@ export const useProductsStore = defineStore("products", {
         protein: 12,
         fat: 8,
         price: 5.99,
-        url: "https://example.com/taco",
+        url: "https://images.pexels.com/photos/2092507/pexels-photo-2092507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         id: 4,
       },
       {
@@ -66,7 +66,7 @@ export const useProductsStore = defineStore("products", {
         protein: 20,
         fat: 15,
         price: 7.49,
-        url: "https://example.com/burrito",
+        url: "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         id: 5,
       },
       {
@@ -77,7 +77,7 @@ export const useProductsStore = defineStore("products", {
         protein: 15,
         fat: 12,
         price: 6.99,
-        url: "https://example.com/enchiladas",
+        url: "https://images.pexels.com/photos/9772454/pexels-photo-9772454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         id: 6,
       },
       {
@@ -88,7 +88,7 @@ export const useProductsStore = defineStore("products", {
         protein: 18,
         fat: 15,
         price: 6.49,
-        url: "https://example.com/quesadilla",
+        url: "https://images.pexels.com/photos/58722/pexels-photo-58722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
         id: 7,
       },
       {
@@ -99,7 +99,7 @@ export const useProductsStore = defineStore("products", {
         protein: 20,
         fat: 18,
         price: 6.49,
-        url: "https://example.com/cheeseburger",
+        url: "https://images.pexels.com/photos/2983103/pexels-photo-2983103.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 8,
       },
       {
@@ -110,7 +110,7 @@ export const useProductsStore = defineStore("products", {
         protein: 4,
         fat: 15,
         price: 3.99,
-        url: "https://example.com/french-fries",
+        url: "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 9,
       },
       {
@@ -121,7 +121,7 @@ export const useProductsStore = defineStore("products", {
         protein: 15,
         fat: 12,
         price: 4.99,
-        url: "https://example.com/chicken-nuggets",
+        url: "https://images.pexels.com/photos/60616/fried-chicken-chicken-fried-crunchy-60616.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 10,
       },
       {
@@ -132,7 +132,7 @@ export const useProductsStore = defineStore("products", {
         protein: 12,
         fat: 16,
         price: 2.99,
-        url: "https://example.com/pizza-slice",
+        url: "https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 11,
       },
       {
@@ -143,18 +143,18 @@ export const useProductsStore = defineStore("products", {
         protein: 30,
         fat: 35,
         price: 12.99,
-        url: "https://example.com/bbq-ribs",
+        url: "https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 12,
       },
       {
         category: "American",
-        name: "Hamburger Hot Dog combo",
+        name: "Hamburger",
         calories: 400,
         carbs: 25,
         protein: 18,
         fat: 22,
         price: 8.99,
-        url: "https://example.com/hamburger",
+        url: "https://images.pexels.com/photos/2983103/pexels-photo-2983103.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 13,
       },
       {
@@ -165,7 +165,7 @@ export const useProductsStore = defineStore("products", {
         protein: 8,
         fat: 10,
         price: 5.99,
-        url: "https://example.com/caesar-salad",
+        url: "https://images.pexels.com/photos/16849912/pexels-photo-16849912/free-photo-of-healthy-salad-with-cucumber.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 14,
       },
       {
@@ -176,7 +176,7 @@ export const useProductsStore = defineStore("products", {
         protein: 10,
         fat: 18,
         price: 4.99,
-        url: "https://example.com/hot-dog",
+        url: "https://images.pexels.com/photos/3023479/pexels-photo-3023479.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 15,
       },
       {
@@ -187,7 +187,7 @@ export const useProductsStore = defineStore("products", {
         protein: 10,
         fat: 15,
         price: 6.99,
-        url: "https://example.com/caprese-salad",
+        url: "https://images.pexels.com/photos/16849912/pexels-photo-16849912/free-photo-of-healthy-salad-with-cucumber.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 16,
       },
       {
@@ -198,7 +198,7 @@ export const useProductsStore = defineStore("products", {
         protein: 15,
         fat: 12,
         price: 7.49,
-        url: "https://example.com/veggie-burger",
+        url: "https://images.pexels.com/photos/16833332/pexels-photo-16833332/free-photo-of-burger-on-plate.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 17,
       },
       {
@@ -209,7 +209,7 @@ export const useProductsStore = defineStore("products", {
         protein: 10,
         fat: 8,
         price: 9.99,
-        url: "https://example.com/mushroom-risotto",
+        url: "https://images.pexels.com/photos/2067418/pexels-photo-2067418.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 18,
       },
       {
@@ -220,7 +220,7 @@ export const useProductsStore = defineStore("products", {
         protein: 12,
         fat: 10,
         price: 10.99,
-        url: "https://example.com/margherita-pizza",
+        url: "https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 19,
       },
       {
@@ -231,7 +231,7 @@ export const useProductsStore = defineStore("products", {
         protein: 18,
         fat: 20,
         price: 11.99,
-        url: "https://example.com/pasta-carbonara",
+        url: "https://images.pexels.com/photos/2703468/pexels-photo-2703468.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 20,
       },
       {
@@ -242,7 +242,7 @@ export const useProductsStore = defineStore("products", {
         protein: 5,
         fat: 22,
         price: 7.99,
-        url: "https://example.com/tiramisu",
+        url: "https://images.pexels.com/photos/12035685/pexels-photo-12035685.jpeg?auto=compress&cs=tinysrgb&w=800",
         id: 21,
       },
     ] as Product[],

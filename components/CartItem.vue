@@ -40,8 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="border rounded-lg bg-no-repeat bg-cover w-1/3"
-            style="background-image: url('/images/american-cover.png');">
+        <div class="border rounded-lg bg-no-repeat bg-cover w-1/3" :style="{ backgroundImage: `url(${url})` }">
         </div>
     </div>
 </template>

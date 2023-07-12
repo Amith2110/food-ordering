@@ -6,7 +6,7 @@
         </div>
         <div v-for="item in cartItems">
             <order-item :quantity="getQuantityOfProduct(item.productId)" :name="item.name" :price="item.price"
-                :product-id="item.productId" :remove-item="cartStore.removeItemCompletelyFromCart" />
+                :product-id="item.productId" :remove-item="cartStore.removeItemCompletelyFromCart" :url="item.url" />
         </div>
         <delivery-card :delivery-price="deliveryPrice" />
         <div class="flex justify-between items-center p-4">

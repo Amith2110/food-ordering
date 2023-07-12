@@ -16,6 +16,7 @@ export default defineNuxtConfig({
       },
     ],
     "nuxt-icons",
+    "@nuxtjs/eslint-module",
   ],
   imports: {
     dirs: ["stores"],
